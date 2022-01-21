@@ -1,0 +1,59 @@
+.skills-content{
+    display: flex;
+    padding: 10px 7px;
+    align-items: center;
+   
+}
+.max-width{
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: auto 0 -90px 50px;
+  
+}
+.title{
+  color: #6937ff;
+  margin: 30px auto;
+
+}
+.work{
+  margin: 25px 0px;
+}
+.text{
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.basecolor{
+  color: #6937ff;
+    font-size: 1.5em;
+    padding: 0px 12px 10px 0px;
+}
+.enterprise-logo{
+  color: #6937ff;
+    font-size: 1.5em;
+}
+.column_left{
+  flex: 1;
+}
+.column_right
+{
+  flex: 1;
+}
+small{
+  color: rgba(238, 235, 232, 0.7);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+}
+
+@media screen and (max-width:720px){
+  .skills{
+    flex-direction: column;
+    
+  }
+  .colum_right{
+    display: none;
+  }
+
+}

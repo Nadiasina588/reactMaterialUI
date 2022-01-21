@@ -1,0 +1,128 @@
+.container{
+  height: 100vh;
+  display: flex;
+  margin-top: 20px;
+}
+.intro_name{
+  color:#e95223;
+}
+
+.container_left{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container_right{
+  flex: 1;
+  
+}
+.container_left_name{
+  padding: 50px 160px;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.intro{
+  font-size: 28px;
+  font-weight: 300;
+}
+.item_class{
+  height: 50px;
+  overflow: hidden;
+}
+
+.item_class_name{
+  height: 100%;
+  animation: move 12s ease-in-out infinite alternate;
+}
+.description{
+  color: rgba(238, 235, 232, 0.7);
+  letter-spacing: 1.2px;
+}
+@keyframes move {
+  25%{
+    transform: translateY(-50px);
+  }
+  50%{
+    transform: translateY(-100px);
+  }
+  75%{
+    transform: translateY(-150px);
+  }
+  100%{
+    transform: translateY(-200px);
+  }
+
+}
+
+.item_class_title{
+  height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #6937ff;
+  display: flex;
+  align-items: center;
+}
+.image_right{
+  width: 85%;
+  height: 90%;
+ 
+  padding: 50px;
+}
+.experience-badge {
+  display: inline-block;
+  border: 1px solid rgb(224, 224, 224);
+  border-radius: 10px;
+  padding: 2px;
+  color: #6937ff;
+  margin: 5px;
+  font-size: 0.9em;
+  
+}
+.experience-badge .images{
+  width: 20px;
+  height: 20px;
+  margin-right: 1px;
+  
+  }
+ .home .home-content .experience-home {
+    display: block;
+} 
+.button_acueil{
+    display: inline-block;
+    background: linear-gradient(to right, #8d63d6, #637dd2, #24a4ca);
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 1px solid #010413;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    width: 40%;
+}
+.fa_icon{
+  margin-right: 4px;
+}
+@media screen and (max-width: 480px){
+  .container{
+    flex-direction: column;
+  }
+  .container_left_name{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .container_left{
+    height: 20vh;
+
+  }
+  .container_right{
+    display: none;
+  }
+}

@@ -1,0 +1,58 @@
+.serv-content{
+  display: flex;
+  justify-content: space-around;
+}
+.max-width_services{
+  max-width: 1300px;
+  padding: 0 50px;
+  margin: 50px 0 50px 50px;
+}
+.card_service{
+    width: calc(25% - 40px);
+    background: #010413;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px 15px;
+    box-shadow: 1px 1px 1px 2px #1a1f2e;
+    cursor: pointer;
+   
+   
+    transition: all 0.3s ease;
+}
+.experience{
+  margin:50px 12px;
+  display: block;
+  text-align: left;
+}
+.experience-badge{
+  border: 1px solid rgb(235, 232, 232);
+   padding: 5px 15px;
+   border-radius: 15px;
+   display: inline-block;
+   margin: 5px 2px;
+
+}
+.images{
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+@media screen and (max-width:720px){
+  .services{
+    flex-direction: column;
+    
+    
+  }
+  .serv-content{
+    flex-direction: column;
+    
+  }
+  .card_service{
+    width: 90%;
+    height: 60vh;
+  }
+}
+
