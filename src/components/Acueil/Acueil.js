@@ -4,6 +4,7 @@ import Me from "../../image/home.svg";
 import Node from "../../image/icons8-bootstrap.svg";
 import Javascript from "../../image/icons8-node-js.svg";
 import React_native from "../../image/icons8-symfony.svg";
+import Typical from "react-typical";
 
 const Acueil = () => {
   return (
@@ -12,14 +13,19 @@ const Acueil = () => {
           <div className="container_left">
             <div className="container_left_name">
               <h2 className="intro">Hi, My name is</h2>
-              <h1 className="intro_name">NADIASINA Nico</h1>
+            
+              <h1 className="intro_name"> NADIASINA Nico </h1>
               <div className="item_class">
-                <div className="item_class_name">
-                  <div className="item_class_title">Web developer </div>
-                  <div className="item_class_title">mobile developer </div>
-                  <div className="item_class_title">software engineer </div>
-                  <div className="item_class_title">web Integrator </div>
-                </div>
+                <Typical 
+                 loop={Infinity} 
+                 steps=
+                 {[
+                   "Web Developer", 80, 
+                 "mobile Developer", 50,
+                  "software engineer", 80 ,
+                  "web Integrator", 80 ]
+                  } 
+                  />
               </div>
               <div className="description">
                 Dangerous skills with outstanding attention to detail , I

@@ -31,11 +31,12 @@
 .item_class{
   height: 50px;
   overflow: hidden;
+  font-size: 30px;
 }
 
 .item_class_name{
   height: 100%;
-  animation: move 12s ease-in-out infinite alternate;
+  /* animation: move 12s ease-in-out infinite alternate; */
 }
 .description{
   color: rgba(238, 235, 232, 0.7);
