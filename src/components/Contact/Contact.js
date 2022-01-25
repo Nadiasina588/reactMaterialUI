@@ -1,16 +1,37 @@
-import React , {useContext} from "react";
+import React, { useContext, useRef } from "react";
 import "./Contact.css";
-
+import emailjs from 'emailjs-com';
 import Contacts from "../../image/contact.svg";
-import { ThemeContext } from "../../context"
-
+import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_2jjgotj",
+        "template_pxtio7c",
+        form.current,
+        "user_iNBNUNW0fWcrH3iIoKXlF"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
     <div>
-      <section className="contact" >
+      <section className="contact">
         <div className="max-width">
           <h2 className="title">Contact me</h2>
           <div className="contact-content">
@@ -46,17 +67,36 @@ const Contact = () => {
                 <b> What's your story</b> Get in touch. Always available
                 freelancing if the right project comes along me.
               </p>
-              <form className="form">
-                <input  style={{backgroundColor: darkMode && "#010413"}} type="text" placeholder="Name" />
-                <input style={{backgroundColor: darkMode && "#010413"}} type="text" placeholder="Subject" />
-                <input style={{backgroundColor: darkMode && "#010413"}} type="text" placeholder="Email" />
-                <textarea rows="5"
-                  style={{backgroundColor: darkMode && "#010413"}} type="text"
-                  placeholder="Entre vos messages et critique" 
+              <form className="form" ref={form} onSubmit={sendEmail}>
+                <input
+                  style={{ backgroundColor: darkMode && "#010413" }}
+                  type="text"
+                  placeholder="Name"
+                  name="user_name"
+                />
+                <input
+                  style={{ backgroundColor: darkMode && "#010413" }}
+                  type="text"
+                  placeholder="Subject"
+                  name="user_subject"
+                />
+                <input
+                  style={{ backgroundColor: darkMode && "#010413" }}
+                  type="text"
+                  placeholder="Email"
+                  name="user_email"
+                />
+                <textarea
+                  rows="5"
+                  style={{ backgroundColor: darkMode && "#010413" }}
+                  type="text"
+                  placeholder="Entre vos messages et critique"
+                  name="message"
                 ></textarea>
-                <button type="submit" className=" btn">
-                  <i className="fa fa-check"> </i> Envoyer
-                </button>
+               
+                 
+                   <input type="submit" value="Envoyer"  className="btn"/>
+               
               </form>
             </div>
           </div>
