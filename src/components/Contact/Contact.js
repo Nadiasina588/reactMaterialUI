@@ -1,11 +1,12 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useRef , useState} from "react";
 import "./Contact.css";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import Contacts from "../../image/contact.svg";
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const theme = useContext(ThemeContext);
+  const [done , setDone] = useState(false);
   const darkMode = theme.state.darkMode;
   const form = useRef();
 
@@ -22,6 +23,7 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setDone(true);
         },
         (error) => {
           console.log(error.text);
@@ -73,30 +75,37 @@ const Contact = () => {
                   type="text"
                   placeholder="Name"
                   name="user_name"
+                  required
                 />
                 <input
                   style={{ backgroundColor: darkMode && "#010413" }}
                   type="text"
                   placeholder="Subject"
                   name="user_subject"
+                  required
                 />
                 <input
                   style={{ backgroundColor: darkMode && "#010413" }}
                   type="text"
+                  required
                   placeholder="Email"
                   name="user_email"
                 />
                 <textarea
                   rows="5"
-                  style={{ backgroundColor: darkMode && "#010413" }}
+                  required
+                  style={{
+                    color: "#fff",
+                    resize: "none",
+                    backgroundColor: darkMode && "#010413",
+                  }}
                   type="text"
                   placeholder="Entre vos messages et critique"
                   name="message"
                 ></textarea>
-               
-                 
-                   <input type="submit" value="Envoyer"  className="btn"/>
-               
+
+                <input type="submit" value="Envoyer" className="btn" />
+                 {done &&  <button className="envoyer_btn">  Merçie a vous !!</button> }
               </form>
             </div>
           </div>

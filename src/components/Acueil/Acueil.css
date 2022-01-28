@@ -70,7 +70,6 @@
 .image_right{
   width: 85%;
   height: 90%;
- 
   padding: 50px;
 }
 .experience-badge {
@@ -80,13 +79,12 @@
   padding: 2px;
   color: #6937ff;
   margin: 5px;
-  font-size: 0.9em;
-  
+  font-size: 0.8em;
 }
 .experience-badge .images{
   width: 20px;
   height: 20px;
-  margin-right: 1px;
+  margin-right: 0px;
   
   }
  .home .home-content .experience-home {
@@ -110,6 +108,26 @@
   margin-right: 4px;
 }
 @media screen and (max-width: 480px){
+  .container{
+    flex-direction: column;
+  }
+  .container_left_name{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .container_left{
+    height: 20vh;
+
+  }
+  .container_right{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 720px){
   .container{
     flex-direction: column;
   }

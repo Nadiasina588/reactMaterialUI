@@ -1,5 +1,5 @@
 .contact{
-  height: 80vh;
+  height: 85vh;
 }
 
 .max-width{
@@ -51,22 +51,25 @@
   display: grid;
 }
 input{
-  width: 50%;
+  width: 70%;
   height: 50px;
   border: none;
   border-bottom: 2px solid #333;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
+  color:#fff;
   outline: none;
 }
 textarea{
-  width: 50%;
-  height: 50px;
+  width: 70%;
+  height: 90px;
   margin: 10px 0px;
   font-size: 14px;
   padding-left: 10px;
   outline: none;
+  border-radius: 4px;
+  color:#fff;
 }
 .btn{
   display: inline-block;
@@ -78,14 +81,23 @@ textarea{
   margin-top: 20px;
   border-radius: 20px;
   border: 1px solid #010413;
-  transition: all 0.3s ease;
   cursor: pointer;
   width: 20%;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover{
+  color: #333;
+}
+.envoyer_btn {
+  width: 40%;
+  border-radius: 3px;
+  padding: 4px;
 }
 
 @media screen and (max-width: 720px){
   .contact{
-    height: 160vh;
+    height: 100vh;
   }
   .contact-content{
     flex-direction: column;

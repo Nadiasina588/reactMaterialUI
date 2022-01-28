@@ -20,10 +20,10 @@ const Acueil = () => {
                  loop={Infinity} 
                  steps=
                  {[
-                   "Web Developer", 80, 
-                 "mobile Developer", 50,
-                  "software engineer", 80 ,
-                  "web Integrator", 80 ]
+                 "Web Developer", 80, 
+                 "Mobile Developer", 50,
+                 "Software engineer", 80 ,
+                 "Web Integrator", 80 ]
                   } 
                   />
               </div>

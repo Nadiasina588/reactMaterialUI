@@ -12,13 +12,19 @@
     background: #010413;
     text-align: center;
     border-radius: 10px;
+    border: none;
     margin: 5px;
     padding: 20px 15px;
-    box-shadow: 1px 1px 1px 2px #1a1f2e;
+    box-shadow: 0.4px 0.4px 0.4px 0.2px #1a1f2e;
     cursor: pointer;
-   
-   
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.card_service:hover{
+  transform: translateY(-12px);
+  -webkit-transform: translateY(-10px);
+  box-shadow: 0px 5px 20px 0px #1a1f2e;
+  -webkit-box-shadow: 0px 5px 20px 0px #1a1f2e;
 }
 .experience{
   margin:50px 12px;
@@ -52,7 +58,26 @@
   }
   .card_service{
     width: 90%;
-    height: 60vh;
+    height: auto;
   }
+  
+}
+
+@media screen and (max-width:480px){
+  .services{
+    flex-direction: column;
+    
+    
+  }
+  .serv-content{
+    flex-direction: column;
+    
+  }
+  .card_service{
+    margin-bottom: 12px;
+    width: 90%;
+    height: auto;
+  }
+  
 }
 

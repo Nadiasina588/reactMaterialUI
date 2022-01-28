@@ -11,11 +11,16 @@
     justify-content: center;
     padding: 10px 0px 30px 0px;
     transition: all 0.3s ease;
-    box-shadow: 1px 1px 1px 2px #1a1f2e;
+    box-shadow: 0.4px 0.4px 0.4px 0.2px #1a1f2e;
     overflow: hidden;
     border-radius: 20px;
     
 }
+.card:hover{
+  transform: translateY(-12px);
+  box-shadow: 0px 5px 20px 0px #1a1f2e;
+}
+
 .max-width_work{
   max-width: 1300px;
   padding: 0 50px;
@@ -45,6 +50,41 @@
   display: flex;
   
 }
+.box_code {
+  display: flex;
+  justify-content: space-around;
+}
+.btn_box_code_source {
+  display: inline-block;
+  background: linear-gradient(to right, #8d63d6, #637dd2, #24a4ca);
+  font-weight: 300;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 8px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #010413;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+  
+}
+.btn_box-code_lien{
+  display: inline-block;
+  background: linear-gradient(to right, #8d63d6, #637dd2, #24a4ca);
+  font-weight: 100;
+  color: #fff;
+  font-size: 12px;
+  padding: 6px 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 1px solid #010413;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+}
 .box:hover .image-work{
   transform: translateY(-100%);
 }
@@ -54,7 +94,21 @@
   }
   .card{
     width: 90%;
-    height: 60vh;
+    height: auto;
+  }
+  .carousel{
+    flex-direction: column;
+  }
+  
+}
+
+@media screen and (max-width:480px){
+  .teams{
+    flex-direction: column;
+  }
+  .card{
+    width: 90%;
+    height: auto;
   }
   .carousel{
     flex-direction: column;

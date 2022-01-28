@@ -117,14 +117,6 @@ const Services = () => {
                     />{" "}
                     Worpress
                   </span>
-                  <span className="experience-badge">
-                    <img
-                      src={React_native}
-                      alt=""
-                      className="images"
-                    />{" "}
-                    Prestashop
-                  </span>
                 </div>
               </div>
             </div>

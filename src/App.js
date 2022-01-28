@@ -8,13 +8,12 @@ import Services from "./components/Services/Services";
 import Experience from "./components/Experience/Experience";
 import Work from "./components/Work/Work";
 import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 import { ThemeContext } from "./context";
     
 const App = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-
-
 
   return (
     <div style={{ backgroundColor:darkMode ? "#010413": "white",
@@ -26,6 +25,7 @@ const App = () => {
      <Experience />
     <Work />
     <Contact />
+    <Footer/>
 
     </div>
   )

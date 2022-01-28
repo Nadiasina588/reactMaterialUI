@@ -4,6 +4,9 @@
     align-items: center;
    
 }
+.skills {
+  height: 70vh;
+}
 .max-width{
   max-width: 1300px;
   padding: 0 50px;
@@ -47,9 +50,10 @@ small{
   letter-spacing: 1.2px;
 }
 
-@media screen and (max-width:720px){
+@media screen and (max-width:480px){
   .skills{
     flex-direction: column;
+    height: 50vh;
     
   }
   .colum_right{
@@ -57,3 +61,16 @@ small{
   }
 
 }
+
+@media screen and (max-width:720px){
+  .skills{
+    flex-direction: column;
+    height: 50vh;
+    
+  }
+  .colum_right{
+    display: none;
+  }
+
+}
+
