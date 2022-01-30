@@ -1,15 +1,18 @@
 .serv-content{
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .max-width_services{
   max-width: 1300px;
   padding: 0 50px;
   margin: 50px 0 50px 50px;
 }
+
 .card_service{
     width: calc(25% - 40px);
     background: #010413;
+    display: flex;
     text-align: center;
     border-radius: 10px;
     border: none;
