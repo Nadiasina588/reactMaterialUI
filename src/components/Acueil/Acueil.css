@@ -146,3 +146,23 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 950px){
+  .container{
+    flex-direction: column;
+  }
+  .container_left_name{
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .container_left{
+    height: 20vh;
+
+  }
+  .container_right{
+    display: none;
+  }
+}

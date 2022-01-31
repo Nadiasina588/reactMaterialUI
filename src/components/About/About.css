@@ -104,3 +104,25 @@
 
   }
 }
+
+@media screen and (max-width:950px){
+  .about{
+    flex-direction: column;
+  }
+  .about_left{
+    width: 50%;
+    text-align: center;
+    
+  }
+  .about_left_image{
+    height: 40vh;
+    
+    text-align: center;
+    object-fit: cover;
+  }
+  .about_right{
+    padding: 20px;
+    text-align: center;
+
+  }
+}
