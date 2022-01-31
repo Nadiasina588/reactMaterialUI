@@ -79,14 +79,15 @@ const Work = () => {
                   <div className="box_code_source">
                     <a
                       className="btn_box_code_source"
-                      href="https://github.com/NadiasinaNico/gestion-des-voitures"
+                      href="https://github.com/NadiasinaNico/gestion-etablissement-public"
                       target="_blank"
                     >
                       code source
                     </a>
                   </div>
                   <div className="box_code_lien">
-                    <a className="btn_box-code_lien" href="" target="_blank">
+                    <a className="btn_box-code_lien" 
+                    href="https://etablissements-public.netlify.app" target="_blank">
                       regarder l'application
                     </a>
                   </div>
@@ -100,12 +101,14 @@ const Work = () => {
                 <p class="text_work_p">Made with React JS with API.</p>
                 <div className="box_code">
                   <div className="box_code_source">
-                    <a className="btn_box_code_source" href="" target="_blank">
+                    <a className="btn_box_code_source" 
+                    href="https://github.com/NadiasinaNico/gestion-pays"
+                     target="_blank">
                       code source
                     </a>
                   </div>
                   <div className="box_code_lien">
-                    <a className="btn_box-code_lien" href="" target="_blank">
+                    <a className="btn_box-code_lien" href="https://gestion-pays.netlify.app" target="_blank">
                       regarder l'application
                     </a>
                   </div>

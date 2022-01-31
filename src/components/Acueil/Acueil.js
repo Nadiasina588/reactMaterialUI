@@ -21,7 +21,7 @@ const Acueil = () => {
                  steps=
                  {[
                  "Web Developer", 80, 
-                 "Mobile Developer", 50,
+                 "Mobile Developer", 80,
                  "Software engineer", 80 ,
                  "Web Integrator", 80 ]
                   } 
@@ -29,7 +29,7 @@ const Acueil = () => {
               </div>
               <div className="description">
                 Dangerous skills with outstanding attention to detail , I
-                msoftware developer and mobile Developer , web Integrator
+                m software developer and mobile Developer , web Integrator
               </div>
               <div className="experience-home">
                 <span className="experience-badge">
