@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
+import {NavLink} from "react-router-dom";
 
 const Navbar = () => {
   useEffect(() => {
@@ -24,34 +25,34 @@ const Navbar = () => {
           </div>
           <ul className="menu">
             <li>
-              <a href="#home" className="menu-btn">
+              <NavLink to="/" className="menu-btn">
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#about" className="menu-btn">
+              <NavLink to="/about" className="menu-btn">
                 About
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#services" className="menu-btn">
+              <NavLink to="/services" className="menu-btn">
                 Services
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#skills" className="menu-btn">
+              <NavLink to="/experience" className="menu-btn">
                 Skills
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#teams" className="menu-btn">
+              <NavLink to="/work" className="menu-btn">
                 Team
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a href="#contact" className="menu-btn">
+              <NavLink to="/contact" className="menu-btn">
                 Contact
-              </a>
+              </NavLink>
             </li>
           </ul>
           <div className="menu-btn_bar">

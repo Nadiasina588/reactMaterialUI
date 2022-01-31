@@ -28,7 +28,7 @@ const About = () => {
               <img src={Javascript} alt="" className="images" /> Node JS
             </span>
             <span className="experience-badge">
-              <img src={React_native} alt="" className="images" /> Mongo DB
+              <img src={React_native} alt="" className="images" />  Symfony
             </span>
             <small>are my favorite weapons</small>
           </div>
